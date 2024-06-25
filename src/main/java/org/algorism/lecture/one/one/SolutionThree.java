@@ -1,12 +1,12 @@
 package org.algorism.lecture.one.one;
 
 
-public class SearchThree {
+public class SolutionThree {
 
     private final String source;
     private final char keyword;
 
-    public SearchThree(String source, char keyword) {
+    public SolutionThree(String source, char keyword) {
         this.source = source;
         this.keyword = keyword;
     }

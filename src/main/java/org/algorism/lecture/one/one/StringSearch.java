@@ -19,11 +19,11 @@ public class StringSearch {
         String source = getSource();
         char keyword = getKeyword();
 
-        System.out.println(new SearchOne(source, keyword).search());
+        System.out.println(new SolutionOne(source, keyword).search());
 
-        System.out.println(new SearchTwo(source, keyword).search());
+        System.out.println(new SolutionTwo(source, keyword).search());
 
-        System.out.println(new SearchThree(source, keyword).search());
+        System.out.println(new SolutionThree(source, keyword).search());
     }
 
     private static char getKeyword() {

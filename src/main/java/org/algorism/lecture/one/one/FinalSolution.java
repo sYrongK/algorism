@@ -2,7 +2,7 @@ package org.algorism.lecture.one.one;
 
 import java.util.Scanner;
 
-public class StringSearchAnswer {
+public class FinalSolution {
 
     public long solution(String source, char keyword) {
         long count = 0;
@@ -15,7 +15,7 @@ public class StringSearchAnswer {
         return count;
     }
     public static void main(String[] args) {
-        StringSearchAnswer instance = new StringSearchAnswer();
+        FinalSolution instance = new FinalSolution();
 
         Scanner scanner = new Scanner(System.in);
         String source = scanner.next();
