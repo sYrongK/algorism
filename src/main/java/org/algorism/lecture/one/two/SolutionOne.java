@@ -9,14 +9,14 @@ public class SolutionOne {
         for (char c : source.toCharArray()) {
 //            if ('A' <= c && 'Z' >= c) {
             if (65 <= c && 90 >= c) {
-
                 // 대소문자 간 아스키코드는 32 차이난다. a의 대문자는 a 변수 - 32하면 된다는 얘기!!
-
-                text.append(Character.toLowerCase(c));
+//                text.append(Character.toLowerCase(c));
+                text.append((char) (c + 32));
             }
 //            if ('a' <= c && 'z' >= c) {
             if (97 <= c && 122 >= c) {
-                text.append(Character.toUpperCase(c));
+//                text.append(Character.toUpperCase(c));
+                text.append((char) (c - 32));
             }
         }
         return text.toString();
