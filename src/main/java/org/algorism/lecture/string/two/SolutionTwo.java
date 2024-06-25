@@ -1,4 +1,4 @@
-package org.algorism.lecture.one.two;
+package org.algorism.lecture.string.two;
 
 import java.util.Scanner;
 
