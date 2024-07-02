@@ -17,13 +17,21 @@ public class SearchLongWord {
 
     private String solution(String text) {
         String[] arr = text.split(" ");
-//        arr.for
-        return null;
+
+        String mostLongWord = "";
+        for (String word : arr) {
+            if (word.length() > mostLongWord.length()) {
+                //길이가 같은 단어일 경우, for loop 순차적으로 돌기 때문에 가장 앞쪽에 단어가 들어가고 나머진 안들어간다.
+                mostLongWord = word;
+            }
+        }
+        return mostLongWord;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String text = scanner.next();
+        System.out.print(">> ");
+        String text = scanner.nextLine();//scanner.next() 쓰려면, 공백으로 단어 구분하기 때문에 hasNext 로 loop 돌면서 받아야 함
         System.out.println(new SearchLongWord().solution(text));
     }
 }
