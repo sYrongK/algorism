@@ -1,7 +1,5 @@
 package org.algorism.lecture.string.three;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 /**
@@ -13,25 +11,34 @@ import java.util.Scanner;
  ▣ 출력설명
  첫 줄에 가장 긴 단어를 출력한다. 가장 긴 단어가 여러개일 경우 문장속에가 가장 앞쪽에 위 치한 단어를 답으로 합니다.
  */
-public class SearchLongWord {
+public class SolutionTwo {
 
     private String solution(String text) {
-        String[] arr = text.split(" ");
+        boolean hasNext = true;
+        String answer = "";
+        while (hasNext) {
+            int i = text.indexOf(" ");
 
-        String mostLongWord = "";
-        for (String word : arr) {
-            if (word.length() > mostLongWord.length()) {
-                //길이가 같은 단어일 경우, for loop 순차적으로 돌기 때문에 가장 앞쪽에 단어가 들어가고 나머진 안들어간다.
-                mostLongWord = word;
+            String word = null;
+            if (i > -1) {
+                word = text.substring(0, i);
+                text = text.substring(i + 1);
+            } else {
+                word = text;
+                hasNext = false;
+            }
+
+            if (word.length() > answer.length()) {
+                answer = word;
             }
         }
-        return mostLongWord;
+        return answer;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print(">> ");
-        String text = scanner.nextLine();//scanner.next() 쓰려면, 공백으로 단어 구분하기 때문에 hasNext 로 loop 돌면서 받아야 함
-        System.out.println(new SearchLongWord().solution(text));
+        String text = scanner.nextLine();
+        System.out.println(new SolutionTwo().solution(text));
     }
 }
