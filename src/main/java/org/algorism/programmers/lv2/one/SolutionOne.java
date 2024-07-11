@@ -2,7 +2,7 @@ package org.algorism.programmers.lv2.one;
 
 public class SolutionOne {
 
-    private static String solution(String s) {
+    public static String solution(String s) {
         String[] str = s.split(" ");
 
         String minVal = str[0];

@@ -3,7 +3,7 @@ package org.algorism.programmers.lv2.one;
 //순수 알고리즘
 public class SolutionTwo {
 
-    private static String solution(String s) {
+    public static String solution(String s) {
         String[] str = s.split(" ");
 
         int min, max, n;

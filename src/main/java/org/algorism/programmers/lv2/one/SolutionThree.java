@@ -5,7 +5,7 @@ import java.util.Arrays;
 //Arrays.sort 이용
 public class SolutionThree {
 
-    private static String solution(String s) {
+    public static String solution(String s) {
         String[] str = s.split(" ");
 
         int[] arr = new int[str.length];
