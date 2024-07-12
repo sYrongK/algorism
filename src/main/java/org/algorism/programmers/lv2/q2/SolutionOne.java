@@ -1,4 +1,4 @@
-package org.algorism.programmers.lv2.two;
+package org.algorism.programmers.lv2.q2;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
