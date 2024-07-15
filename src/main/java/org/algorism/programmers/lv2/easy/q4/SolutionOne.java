@@ -1,4 +1,4 @@
-package org.algorism.programmers.lv2.q4;
+package org.algorism.programmers.lv2.easy.q4;
 
 public class SolutionOne {
 

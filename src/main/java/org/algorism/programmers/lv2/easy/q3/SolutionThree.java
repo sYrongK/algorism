@@ -1,6 +1,4 @@
-package org.algorism.programmers.lv2.q3;
-
-import java.util.Arrays;
+package org.algorism.programmers.lv2.easy.q3;
 
 public class SolutionThree {
 

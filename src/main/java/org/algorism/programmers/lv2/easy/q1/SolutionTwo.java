@@ -1,4 +1,4 @@
-package org.algorism.programmers.lv2.q1;
+package org.algorism.programmers.lv2.easy.q1;
 
 //순수 알고리즘
 public class SolutionTwo {

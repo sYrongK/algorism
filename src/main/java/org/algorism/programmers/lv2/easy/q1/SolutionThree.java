@@ -1,4 +1,4 @@
-package org.algorism.programmers.lv2.q1;
+package org.algorism.programmers.lv2.easy.q1;
 
 import java.util.Arrays;
 

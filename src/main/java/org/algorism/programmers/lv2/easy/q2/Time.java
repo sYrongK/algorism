@@ -1,12 +1,10 @@
-package org.algorism.programmers.lv2.q1;
+package org.algorism.programmers.lv2.easy.q2;
 
 public class Time {
 
     public static void main(String[] args) {
-
-        estimate(() -> SolutionOne.solution("1 3 4 5 -1 3 -3 7"));
-        estimate(() -> SolutionTwo.solution("1 3 4 5 -1 3 -3 7"));
-        estimate(() -> SolutionThree.solution("1 3 4 5 -1 3 -3 7"));
+        estimate(() -> SolutionOne.solution("((((((()))()()()()()(())))"));
+        estimate(() -> SolutionTwo.solution("((((((()))()()()()()(())))"));
     }
 
     private static void estimate(Runnable runnable) {

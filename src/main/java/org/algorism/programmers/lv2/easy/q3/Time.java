@@ -1,10 +1,11 @@
-package org.algorism.programmers.lv2.q2;
+package org.algorism.programmers.lv2.easy.q3;
 
 public class Time {
 
     public static void main(String[] args) {
-        estimate(() -> SolutionOne.solution("((((((()))()()()()()(())))"));
-        estimate(() -> SolutionTwo.solution("((((((()))()()()()()(())))"));
+        estimate(() -> SolutionOne.solution(new int[] {1, 4, 2} , new int[] {5, 4, 4}));
+        estimate(() -> SolutionTwo.solution(new int[] {1, 4, 2} , new int[] {5, 4, 4}));
+        estimate(() -> SolutionThree.solution(new int[] {1, 4, 2} , new int[] {5, 4, 4}));
     }
 
     private static void estimate(Runnable runnable) {
