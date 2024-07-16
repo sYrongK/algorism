@@ -7,6 +7,7 @@ public class Time {
         String[] gifts = new String[] {"a b", "b a", "c a", "a c", "a c", "c a"};
 
         estimate(() -> SolutionOne.solution(friends, gifts));
+        estimate(() -> SolutionTwo.solution(friends, gifts));
     }
 
     private static void estimate(Runnable runnable) {
