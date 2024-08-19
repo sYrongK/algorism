@@ -6,6 +6,7 @@ public class Time {
         String new_id = "...!@BaT#*..y.abcdefghijklm";
 
         estimate(() -> SolutionOne.solution(new_id));
+        estimate(() -> SolutionTwo.solution(new_id));
     }
 
     private static void estimate(Runnable runnable) {
