@@ -10,13 +10,13 @@ public class SolutionTwo {
         int count = 0;
         Stack<Integer> basket = new Stack<>();
         for (int move : moves) {
-            for (int j = 0; j < board.length; j++) {
+            for (int y = 0; y < board.length; y++) {
                 int x = move - 1;
-                int doll = board[j][x];
+                int doll = board[y][x];
                 if (doll > 0) {
-                    board[j][x] = 0;
+                    board[y][x] = 0;
                     if (!basket.empty() && (basket.peek() == doll)) {
-                        basket.pop();
+                        basket.pop();//삭제
                         count += 2;
                     } else {
                         basket.push(doll);

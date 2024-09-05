@@ -1,31 +1,24 @@
 package org.algorism.programmers.lv1.challenge.q9;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.ArrayDeque;
+import java.util.Stack;
 
-public class SolutionOne {
+public class SolutionThree {
 
     public static int solution(int[][] board, int[] moves) {
-        //board 인형뽑기 기계 5x5 ~ 30x30 2차원 배열
-        //moves 크레인 위치 == 가로 위치 (크기는 1 ~ 1000) board의 가로위치 이하의 수
-        //인형은 1 ~ 100 숫자가 같으면 같은 인형!
-        //0은 비어있음 의미
-        //바구니에 연속으로 동일한 인형 담으면 터져서 사라진다.
-
         int count = 0;
-        List<Integer> basket = new ArrayList<>();
+        ArrayDeque<Integer> basket = new ArrayDeque<>();
         for (int move : moves) {
             for (int y = 0; y < board.length; y++) {
                 int x = move - 1;
                 int doll = board[y][x];
                 if (doll > 0) {
                     board[y][x] = 0;
-                    int forwardIndex = basket.size() - 1;
-                    if (!basket.isEmpty() && (basket.get(forwardIndex) == doll)) {
-                        basket.remove(forwardIndex);
+                    if (!basket.isEmpty() && (basket.peek() == doll)) {
+                        basket.pop();//삭제
                         count += 2;
                     } else {
-                        basket.add(doll);
+                        basket.push(doll);
                     }
                     break;
                 }

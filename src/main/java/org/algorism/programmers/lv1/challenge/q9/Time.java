@@ -9,6 +9,7 @@ public class Time {
 
         estimate(() -> SolutionOne.solution(board, moves));
         estimate(() -> SolutionTwo.solution(board, moves));
+        estimate(() -> SolutionThree.solution(board, moves));
     }
 
     private static void estimate(Runnable runnable) {
