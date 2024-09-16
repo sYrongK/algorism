@@ -25,10 +25,10 @@ public class Solution {
                 if (arr[j] < arr[idx]) idx = j;
             }
             //i번째 숫자와 idx번째 숫자 swap
-            System.out.println("i : " + i);
-            System.out.println("idx : " + idx);
+//            System.out.println("i : " + i);
+//            System.out.println("idx : " + idx);
             if (idx != i) {
-                System.out.println("Swap >>>> ");
+//                System.out.println("Swap >>>> ");
                 int tmp = arr[i];
                 arr[i] = arr[idx];
                 arr[idx] = tmp;
