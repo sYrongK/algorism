@@ -29,8 +29,19 @@ public class Solution {
         }
     }
 
+    private static int recurve3(int n) {
+        /*
+        팩토리얼
+        자연수 N이 주어졌을 때 N! 출력
+        */
+        return n == 1
+                ? n
+                : n * recurve3(n - 1);
+    }
+
     public static void main(String[] args) {
 //        recurve1(10);
-        recurve2(11);
+//        recurve2(11);
+        System.out.println(recurve3(5));
     }
 }
