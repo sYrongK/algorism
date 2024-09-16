@@ -3,7 +3,7 @@ package org.algorism.lecture.fibonacci;
 import java.util.Arrays;
 
 /**
- * 피보나치 수열 - 재귀 + 배열 (제일 빨라)
+ * 피보나치 수열 - 재귀 + 스택프레임 (제일 빨라)
  */
 public class SolutionThree {
     private static int[] fibonacci;
