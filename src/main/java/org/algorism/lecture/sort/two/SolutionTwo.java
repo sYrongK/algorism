@@ -11,7 +11,7 @@ public class SolutionTwo {
 
     public static int[] solution(int[] arr) {
         for (int i = 0; i < arr.length-1; i++) {
-            System.out.println("index 비교 범위 : " + 0 + " ~ " + (arr.length-i-1));
+//            System.out.println("index 비교 범위 : " + 0 + " ~ " + (arr.length-i-1));
             for (int j = 0; j < arr.length-i-1; j++) {
 //                System.out.println("j : " + j);
                 if (arr[j+1] < arr[j]) {
