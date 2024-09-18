@@ -3,6 +3,7 @@ package org.algorism.lecture.tree;
 import java.util.stream.IntStream;
 
 /**
+ * 부분집합 구하기 (DFS)
  * 자연수 N. 1부터 N 까지의 원소를 갖는 집합의 부분집합을 출력해라. 공집합은 제외
  *
  * 원소가 n개인 집합의 부분집합은 2의 N승이다. (공집합 포함)
